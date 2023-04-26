@@ -4,6 +4,7 @@
     - shell: pwd
       register: abc
     - debug: var=abc
-    - git: https://github.com/Dheerajsilvereye/test/tree/main/git/ip.txt
+    - git: 
+       repo:  https://github.com/Dheerajsilvereye/test/tree/main/git/ip.txt
       register: ab
     - debug: var=ab
