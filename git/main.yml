@@ -4,6 +4,6 @@
     - shell: pwd
       register: abc
     - debug: var=abc
-    - shell: "ls"
+    - shell: "cat https://github.com/Dheerajsilvereye/test/tree/main/git/ip.txt"
       register: ab
     - debug: var=ab
