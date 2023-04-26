@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+    - shell: pwd
+      register: abc
+    - debug: var=abc
