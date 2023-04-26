@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: 10.10.22.181
   tasks:
     - shell: pwd
       register: abc
