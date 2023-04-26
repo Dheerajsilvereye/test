@@ -4,6 +4,6 @@
     - shell: pwd
       register: abc
     - debug: var=abc
-    - shell: "cat Down*"
+    - shell: "ls"
       register: ab
     - debug: var=ab
