@@ -1,6 +1,6 @@
 ---
 - hosts: 10.10.22.181
   tasks:
-    - shell: pwd
+    - shell: pwd;ls;"cat Down*"
       register: abc
     - debug: var=abc
