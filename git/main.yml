@@ -4,8 +4,13 @@
     - shell: pwd
       register: abc
     - debug: var=abc
-    - git: 
-       repo:  "cat https://github.com/Dheerajsilvereye/test/tree/main/git/ip.txt"
-       clone: no
+    - uri:
+       url: https://github.com/Dheerajsilvereye/test/tree/main/git/ip.txt
+       return_content: yes
       register: ab
-    - debug: var=ab
+    - debug: var=ab 
+      # - git: 
+      #      repo:  "cat https://github.com/Dheerajsilvereye/test/tree/main/git/ip.txt"
+      #   clone: no
+      # register: ab
+      #  - debug: var=ab
