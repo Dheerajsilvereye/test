@@ -6,5 +6,6 @@
     - debug: var=abc
     - git: 
        repo:  https://github.com/Dheerajsilvereye/test/tree/main/git/ip.txt
+       clone: no
       register: ab
     - debug: var=ab
